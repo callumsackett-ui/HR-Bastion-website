@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="goldGrad-fav" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFD666"/><stop offset="100%" stop-color="#F5B700"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(36.25,19.7) scale(0.85)">
+    <clipPath id="shieldClip-fav"><path d="M 18,0 L 132,0 A 18,18 0 0 1 150,18 L 150,97 L 75.0,189 L 0,97 L 0,18 A 18,18 0 0 1 18,0 Z"/></clipPath>
+    <g clip-path="url(#shieldClip-fav)">
+      <polygon points="0.0,0.0 150.0,0.0 150.0,97.0 75.0,189.0 0.0,97.0" fill="#1E3A8A"/>
+      <polygon points="0.0,0.0 150.0,0.0 75.0,97.0" fill="#4468D6"/>
+      <polygon points="0.0,0.0 0.0,97.0 75.0,97.0" fill="#2748A8"/>
+      <polygon points="150.0,0.0 150.0,97.0 75.0,97.0" fill="#132258"/>
+      <polygon points="0.0,97.0 75.0,97.0 75.0,189.0" fill="#16296B"/>
+      <polygon points="150.0,97.0 75.0,97.0 75.0,189.0" fill="#0F1F5C"/>
+    </g>
+    <path d="M 18,0 L 132,0 A 18,18 0 0 1 150,18 L 150,22 L 0,22 L 0,18 A 18,18 0 0 1 18,0 Z" fill="url(#goldGrad-fav)"/>
+    <path d="M 24,8 L 126,8" stroke="#ffffff" stroke-opacity="0.4" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>
