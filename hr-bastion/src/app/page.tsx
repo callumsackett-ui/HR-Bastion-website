@@ -98,7 +98,7 @@ export default function Home() {
       <section className="max-w-6xl mx-auto px-6 pt-16 pb-20 grid md:grid-cols-2 gap-12 items-center" style={{ background: "#FFFFFF" }}>
         <div className="fade-up">
           <div className="inline-flex items-center text-xs font-semibold uppercase tracking-wide mb-5" style={{ color: "var(--cobalt)" }}>
-            <span className="badge-line"></span>OUTSOURCE YOUR HR TO THE RIGHT PERSON
+            <span className="badge-line"></span>FOR UK SMES & GROWING BUSINESSES
           </div>
           <h1 className="text-4xl md:text-5xl font-bold leading-[1.1] mb-6" style={{ color: "var(--navy)" }}>
             Get matched with the right
@@ -106,9 +106,9 @@ export default function Home() {
             <span style={{ color: "var(--cobalt)" }}>outsourced HR expert for your business.</span>
           </h1>
           <p className="text-lg leading-relaxed mb-8" style={{ color: "#475569" }}>
-            Every business&apos;s people risk looks different. HR Bastion matches you with an outsourced HR partner
-            suited to your headcount, sector and your specific needs and requirements, without the cost, contracts,
-            or risk of hiring in-house.
+            Every business&apos;s HR needs are different. HR Bastion matches you with an outsourced HR partner
+            suited to your headcount, sector and your specific needs and requirements, without the upfront cost
+            or risks of hiring in-house.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link href="/book-a-call" className="gold-cta px-7 py-3.5 rounded-full font-semibold">Find My HR Match</Link>
@@ -201,7 +201,7 @@ export default function Home() {
                 <li className="flex justify-between border-b border-white/10 pb-3"><span>Employer NI (15% above £5,000 threshold)</span><span className="font-semibold text-white">≈ £6,195</span></li>
                 <li className="flex justify-between border-b border-white/10 pb-3"><span>Minimum employer pension (auto-enrolment)</span><span className="font-semibold text-white">≈ £1,200</span></li>
                 <li className="flex justify-between border-b border-white/10 pb-3"><span>Recruitment / agency fee (one-off)</span><span className="font-semibold text-white">£6,900–£9,300</span></li>
-                <li className="flex justify-between pb-1"><span>Notice period, redundancy &amp; severance exposure if it doesn&apos;t work out</span><span className="font-semibold text-white">Ongoing risk</span></li>
+                <li className="flex justify-between pb-1"><span>Contract flexibility</span><span className="font-semibold text-white">Tied into contract</span></li>
               </ul>
               <div className="mt-6 pt-6 border-t border-white/10 flex justify-between items-center">
                 <span className="text-slate-300 text-sm">Realistic Year 1 cost</span>
