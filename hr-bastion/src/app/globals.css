@@ -27,6 +27,44 @@ h1,h2,h3,.display{ font-family:'Fraunces',serif; }
 .fade-up.in{ opacity:1; transform:translateY(0); }
 .badge-line::before{content:"";display:inline-block;width:28px;height:2px;background:var(--gold);margin-right:10px;vertical-align:middle;}
 
+/* Why We Exist: speech bubbles leading into the shield */
+.problem-bubble{
+  position:relative;
+  background:#26396B;
+  border:1px solid rgba(255,255,255,0.16);
+  border-top:3px solid var(--gold);
+  border-radius:16px;
+}
+.problem-bubble::after{
+  content:"";
+  position:absolute;
+  width:18px;
+  height:18px;
+  left:calc(50% - 9px);
+  bottom:-10px;
+  background:#26396B;
+  border-right:1px solid rgba(255,255,255,0.16);
+  border-bottom:1px solid rgba(255,255,255,0.16);
+  transform:rotate(45deg);
+}
+.problem-wires path{
+  fill:none;
+  stroke:var(--gold);
+  stroke-width:2;
+  stroke-dasharray:5 7;
+  vector-effect:non-scaling-stroke;
+  animation:wireFlow 1s linear infinite;
+}
+@keyframes wireFlow{ to{ stroke-dashoffset:-12; } }
+.problem-node{
+  box-shadow:0 0 0 8px rgba(245,183,0,0.18);
+  animation:nodePulse 1.8s ease-in-out infinite;
+}
+@keyframes nodePulse{ 50%{ box-shadow:0 0 0 16px rgba(245,183,0,0); } }
+@media (prefers-reduced-motion:reduce){
+  .problem-wires path, .problem-node{ animation:none; }
+}
+
 /* Step 1: chat bubbles */
 .chat-bubble{
   background:var(--bg);

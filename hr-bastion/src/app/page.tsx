@@ -2,6 +2,7 @@ import Link from "next/link";
 import Shield from "@/components/Shield";
 import HowItWorks from "@/components/HowItWorks";
 import ScrollReveal from "@/components/ScrollReveal";
+import ProblemBubbles from "@/components/ProblemBubbles";
 
 const trustItems = [
   { value: "100%", label: "Free to get matched" },
@@ -246,7 +247,7 @@ export default function Home() {
 
       {/* WHY WE EXIST */}
       <section className="py-24" style={{ background: "linear-gradient(160deg, var(--navy) 0%, var(--cobalt) 100%)" }}>
-        <div className="max-w-4xl mx-auto px-6 text-center">
+        <div className="max-w-5xl mx-auto px-6 text-center">
           <div className="fade-up">
             <div className="inline-flex items-center text-xs font-semibold uppercase tracking-wide mb-4" style={{ color: "var(--gold)" }}>
               <span className="badge-line"></span>Why We Exist
@@ -260,22 +261,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-12 fade-up">
-            <div
-              className="rounded-2xl border-2 border-dashed p-16 flex flex-col items-center justify-center gap-3"
-              style={{ borderColor: "rgba(255,255,255,0.25)", background: "rgba(255,255,255,0.04)" }}
-            >
-              <div className="w-14 h-14 rounded-full flex items-center justify-center" style={{ background: "rgba(245,183,0,0.15)" }}>
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                  <path d="M6 4L16 10L6 16V4Z" fill="#F5B700" />
-                </svg>
-              </div>
-              <div className="text-sm font-semibold text-white">[ Founder video or photo goes here ]</div>
-              <div className="text-xs max-w-sm" style={{ color: "#94A3B8" }}>
-                A short clip or photo of you speaking directly to the problem above.
-              </div>
-            </div>
-          </div>
+          <ProblemBubbles />
         </div>
       </section>
 
