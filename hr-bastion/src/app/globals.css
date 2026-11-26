@@ -65,6 +65,30 @@ h1,h2,h3,.display{ font-family:'Fraunces',serif; }
   .problem-wires path, .problem-node{ animation:none; }
 }
 
+/* Call request form: sending spinner and animated success check */
+.send-spinner{
+  width:16px;
+  height:16px;
+  border-radius:50%;
+  border:2px solid rgba(15,23,42,0.25);
+  border-top-color:var(--navy);
+  animation:spin .7s linear infinite;
+}
+@keyframes spin{ to{ transform:rotate(360deg); } }
+.success-check{ overflow:visible; animation:successPop .45s ease 1s; }
+.success-fill{ fill:var(--cobalt); transform-origin:center; animation:successFill .4s cubic-bezier(.3,1.4,.6,1) .5s both; }
+.success-ring, .success-tick{ fill:none; stroke-linecap:round; stroke-linejoin:round; stroke-dasharray:1; }
+.success-ring{ stroke:var(--cobalt); stroke-width:4; animation:successDraw .55s ease both; }
+.success-tick{ stroke:#fff; stroke-width:6; animation:successDraw .4s ease .8s both; }
+.success-text{ animation:successRise .5s ease 1s both; }
+@keyframes successDraw{ from{ stroke-dashoffset:1; opacity:0; } 1%{ opacity:1; } to{ stroke-dashoffset:0; } }
+@keyframes successFill{ from{ transform:scale(0); } to{ transform:scale(1); } }
+@keyframes successPop{ 50%{ transform:scale(1.1); } }
+@keyframes successRise{ from{ opacity:0; transform:translateY(10px); } to{ opacity:1; transform:translateY(0); } }
+@media (prefers-reduced-motion:reduce){
+  .send-spinner, .success-check, .success-fill, .success-ring, .success-tick, .success-text{ animation:none; }
+}
+
 /* Step 1: chat bubbles */
 .chat-bubble{
   background:var(--bg);

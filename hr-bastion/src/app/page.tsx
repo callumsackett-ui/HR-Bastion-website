@@ -3,6 +3,7 @@ import Shield from "@/components/Shield";
 import HowItWorks from "@/components/HowItWorks";
 import ScrollReveal from "@/components/ScrollReveal";
 import ProblemBubbles from "@/components/ProblemBubbles";
+import CookieSettingsButton from "@/components/CookieSettingsButton";
 
 const trustItems = [
   { value: "100%", label: "Free to get matched" },
@@ -340,6 +341,7 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-6 text-xs" style={{ color: "#64748B" }}>
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <CookieSettingsButton />
             <span>© 2026 HR Bastion. All rights reserved.</span>
           </div>
         </div>

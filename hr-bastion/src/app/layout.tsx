@@ -1,10 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import CookieConsent from "@/components/CookieConsent";
 
 export const metadata: Metadata = {
   title: "HR Bastion. Outsourced HR, Matched to You",
   description:
-    "Get matched with the right outsourced HR expert for your business. Free to get matched, no obligation, no forms to fill in.",
+    "Get matched with the right outsourced HR expert for your business. Free to get matched, no obligation.",
   icons: {
     icon: "/favicon.svg",
   },
@@ -29,7 +30,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        {children}
+        <CookieConsent />
+      </body>
     </html>
   );
 }

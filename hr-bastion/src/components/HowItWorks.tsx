@@ -192,7 +192,7 @@ export default function HowItWorks() {
           </h2>
           <p className="max-w-xl mx-auto" style={{ color: "#64748B" }}>
             Speak to one of our experts who will uncover your needs, find you the perfect outsourced HR partner, and
-            schedule the intro call. No forms to fill in or admin for you to do.
+            schedule the intro call. No lengthy forms or admin for you to do.
           </p>
         </div>
 
