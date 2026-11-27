@@ -103,7 +103,7 @@ export default function Home() {
             <span className="badge-line"></span>FOR UK SMES & GROWING BUSINESSES
           </div>
           <h1 className="text-4xl md:text-5xl font-bold leading-[1.1] mb-6" style={{ color: "var(--navy)" }}>
-            Get matched with the right
+            Find the right
             <br />
             <span style={{ color: "var(--cobalt)" }}>outsourced HR expert for your business.</span>
           </h1>
